@@ -1,0 +1,1 @@
+This is a group of personal projects and attempts to learn adn understand mongoDB and web. 
