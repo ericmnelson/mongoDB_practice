@@ -1,0 +1,63 @@
+use customers
+
+db.createUser(
+{ user: "eric",
+  pwd: "Surfer007z",
+  roles: [
+    { role: "clusterAdmin", db: "admin" },
+    { role: "readAnyDatabase", db: "admin" },
+    "readWrite",
+     ] 
+},
+{ w: "majority", wtimeout: 5000 })
+
+db.createCollection("customers")
+
+db.customers.insert({
+	first_name:"John",
+	last_name:"Doe"
+})
+
+db.customers.find()
+
+db.customers.insert([
+	{
+		first_name:"Scott",
+		last_name:"Johnson"
+	},
+	{
+		first_name:"Jill",
+		last_name:"Swanson"
+	},
+	{
+		first_name:"Michelle",
+		last_name:"Ford"
+	},
+])
+
+
+db.customers.insert({
+	first_name:"William",
+	last_name:"Heart",
+	gender:"male"
+})
+
+db.customers.insert({
+	first_name:"Mary",
+	last_name:"Jackson",
+	gender:"female",
+	age:33,
+	birthday:new Date('Sep 10, 1981')
+})
+
+db.customers.findOne({first_name:"William"})
+
+db.customers.update({first_name:"William"}, {last_name:"Hill"})
+
+
+
+
+
+
+
+
