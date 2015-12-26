@@ -1,0 +1,49 @@
+db.products.insert({
+	name:"Microsoft Surface",
+	category:"Electronics",
+	model:"7G5-00001",
+	sku:"49767017",
+	img:"http://somewebsite.com/someimage.jpg",
+	price:49.99,
+	description:"Microsoft Surface Pro 4 Tablet: With a powerful Intel® processor, the Surface Pro 4 helps you stay productive and motivated throughout your day. Write notes and navigate features using the Surface Pen, or use the kickstand for hands-free viewing. The ample 512GB storage capacity offers plenty of room for your music and games.",
+	pickup_available:true,
+	release_date: ISODate("2015-09-01"),
+	specifications:{
+		height: "7.36 inches",
+		weight: "21.92 ounces",
+		width: "10.52 inches",
+		battery_life:"10 hours",
+		display_type:"LCD",
+		touch_screen:true,
+		memory: "2gb",
+		processor_type:"Intel"
+	},
+	reviews: [
+		{
+			subject:"Great Tablet!",
+			body: "This is a full power, spec'd out PC 1st, which also happens to function nicely as a tablet. In fact, I no longer use any type of dedicated tablet, just this one device. I am a Surface Pro 3 user who loved the device enough to move up to the Surface Pro 4 (mostly for the higher specs and larger screen). This makes my opinion based on over a year with Surface Pro's, and a little biased since I clearly liked it enough to get another one.",
+			rating: "4.5",
+			user:"someuser01",
+			date: ISODate("2015-09-02"),
+			would_recommend: true
+		},
+		{
+			subject:"Boring Tablet!",
+			body: "This makes my opinion based on over a year with Surface Pro's, and a little biased since I clearly liked it enough to get another one.",
+			rating: "4.0",
+			user:"someuser02",
+			date: ISODate("2015-09-21"),
+			would_recommend: true
+		},
+		{
+			subject:"Crap Tablet!",
+			body: "This is a full power, spec'd out PC 1st, which also happens to function nicely as a tablet. In fact, I no longer use any type of dedicated tablet, just this one device. I am a Surface Pro 3 user who loved the device enough to move up to the Surface Pro 4 (mostly for the higher specs and larger screen). This makes my opinion based on over a year with Surface Pro's, and a little biased since I clearly liked it enough to get another one.",
+			rating: "2.5",
+			user:"someUnhappyuser03",
+			date: ISODate("2015-10-02"),
+			would_recommend: false
+		}
+	],
+	protection_services:["damage", "battery", "power"]
+}),
+
