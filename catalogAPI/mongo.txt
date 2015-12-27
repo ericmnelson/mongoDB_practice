@@ -47,3 +47,52 @@ db.products.insert({
 	protection_services:["damage", "battery", "power"]
 }),
 
+{
+	name:"Sony PlayStation 4",
+	category:"Electronics",
+	model:"J001057",
+	sku:"4551776",
+	img:"http://somewebsite.com/someimage.jpg",
+	price:399.99,
+	description: "great device",
+	pickup_available:true,
+	release_date: ISODate("2015-06-01"),
+	specifications:{
+		height: "4.36 inches",
+		weight: "11.92 ounces",
+		width: "15.52 inches",
+		memory: "500gb"
+	},
+	reviews: [
+		{
+			subject:"Great Gaming!",
+			body: "This is a full power, spec'd out PC 1st, which also happens to function nicely as a tablet. In fact, I no longer use any type of dedicated tablet, just this one device. I am a Surface Pro 3 user who loved the device enough to move up to the Surface Pro 4 (mostly for the higher specs and larger screen). This makes my opinion based on over a year with Surface Pro's, and a little biased since I clearly liked it enough to get another one.",
+			rating: "4.5",
+			user:"someuser01",
+			date: ISODate("2015-09-02"),
+			would_recommend: true
+		},
+		{
+			subject:"Boring Station!",
+			body: "This makes my opinion based on over a year with Surface Pro's, and a little biased since I clearly liked it enough to get another one.",
+			rating: "4.0",
+			user:"someuser02",
+			date: ISODate("2015-09-21"),
+			would_recommend: true
+		},
+		{
+			subject:"Crap Gaming device!",
+			body: "This is a full power, spec'd out PC 1st, which also happens to function nicely as a tablet. In fact, I no longer use any type of dedicated tablet, just this one device. I am a Surface Pro 3 user who loved the device enough to move up to the Surface Pro 4 (mostly for the higher specs and larger screen). This makes my opinion based on over a year with Surface Pro's, and a little biased since I clearly liked it enough to get another one.",
+			rating: "2.5",
+			user:"someUnhappyuser03",
+			date: ISODate("2015-10-02"),
+			would_recommend: false
+		}
+	],
+	protection_services:["damage", "battery", "power"]
+}
+
+
+
+
+
