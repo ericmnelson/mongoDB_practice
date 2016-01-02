@@ -9,8 +9,9 @@ router.get('/', function(req, res){
 	Customer.getCustomers(function(err, customers){
 		if(err){
 			res.send(err);
+		}else {
+			res.json(customers);
 		}
-		res.json(customers);
 	});
 });
 
@@ -19,8 +20,9 @@ router.get('/:id', function(req, res){
 	Customer.getCustomerById(req.params.id, function(err, customer){
 		if(err){
 			res.send(err);
+		}else{
+			res.json(customer);
 		}
-		res.json(customer);
 	});
 });
 
@@ -30,8 +32,9 @@ router.post('/', function(req, res){
 	Customer.addCustomer(customer, function(err, customer){
 		if(err){
 			res.send(err);
+		}else {
+			res.json(customer);
 		}
-		res.json(customer);
 	});
 });
 
@@ -42,8 +45,9 @@ router.put('/:id', function(req, res){
 	Customer.updateCustomer(id, customer, {}, function(err, customer){
 		if(err){
 			res.send(err);
+		}else {
+			res.json(customer);
 		}
-		res.json(customer);
 	});
 });
 
@@ -53,8 +57,9 @@ router.delete('/:id', function(req, res){
 	Customer.removeCustomer(id, function(err, customer){
 		if(err){
 			res.send(err);
+		}else {
+			res.json(customer);
 		}
-		res.json(customer);
 	});
 });
 
